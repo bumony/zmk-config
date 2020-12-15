@@ -34,7 +34,7 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (KEYBOARD_TITLE)
-        run: west build -s zmk/app -b BOARD_NAME -- -DSHIELD=SHIELD_NAME -DZMK_CONFIG=/github/workspace/config
+        run: west build -s zmk/app -b BOARD_NAME -- -DSHIELD=SHIELD_NAME -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: KEYBOARD_TITLE DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/BOARD_NAME.dts.pre.tmp
