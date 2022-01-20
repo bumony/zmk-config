@@ -1,6 +1,5 @@
-if SHIELD_LELE84
+if SHIELD_BUMON42
 
 config ZMK_KEYBOARD_NAME
-    default "Lele84Keyboard"
+    default "Bumon42Keyboard"
 endif
-
