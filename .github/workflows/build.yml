@@ -34,7 +34,7 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (Bumon42)
-        run: west build -s zmk/app -b Bumon42 -- -DSHIELD=Bumon42 -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b Bumon42 -- -DSHIELD=Bumon42 -DZMK_CONFIG="$/github/workspace/config"
       - name: Bumon42 DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/Bumon42.dts.pre.tmp
@@ -46,4 +46,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: Bumon42.uf2
+          path: build/Bumon42.uf2
