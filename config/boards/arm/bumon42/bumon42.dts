@@ -8,8 +8,8 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 / {
-	model = "LELE84";
-	compatible = "Lele84";
+	model = "BUMON42";
+	compatible = "bumon42";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
@@ -26,7 +26,7 @@
 		full-ohms = <(1000000 + 1000000)>;
 	};
 
-	
+
 
 	ext-power {
 		compatible = "zmk,ext-power-generic";
@@ -34,7 +34,7 @@
 		control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
 	};
 
-	
+
 };
 
 &gpio0 {
@@ -54,7 +54,7 @@
 };
 
 &spi0 {
-	// Underglow data: P0.31 
+	// Underglow data: P0.31
   compatible = "nordic,nrf-spim";
   status = "okay";
   mosi-pin = <31>;
