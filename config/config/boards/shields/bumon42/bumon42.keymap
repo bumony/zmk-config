@@ -1,0 +1,19 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+
+            bindings = <
+&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp   N8  &kp  N9 &kp  N0  &kp MINUS &kp EQUAL &kp BSPC  &kp DELETE                             &kp LOCKING_NUM &kp KP_DIVIDE &kp KP_MULTIPLY &kp KP_MINUS &none
+&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp   I   &kp  O  &kp   P  &kp LBKT &kp RBKT  &kp BSLH  &none                                  &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_PLUS &none
+&kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp   K   &kp  L  &kp SEMI &kp SQT     &kp RET   &none  &none                                 &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &none       &none
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT  &none  &none                         &kp UP_ARROW    &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_ENTER &none
+&kp LCTRL &kp LGUI &kp LALT  &none    &kp SPACE    &kp SEMI   &kp  RALT  &kp  RGUI  &kp  RCTRL &none  &none &none  &none&kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW &kp KP_NUMBER_0 &kp KP_DOT &none            &none
+			>;
+        };
+    };
+};
