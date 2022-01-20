@@ -6,7 +6,7 @@
 if BOARD_BUMON42
 
 config BOARD
-	default "bumon42"
+	default "Bumon42"
 
 if USB
 

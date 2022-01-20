@@ -11,7 +11,7 @@
 #include <sys/sys_io.h>
 #include <devicetree.h>
 
-static int pinmux_bumon42_init(const struct device *port) {
+static int pinmux_Bumon42_init(const struct device *port) {
     ARG_UNUSED(port);
 
 #if CONFIG_BOARD_NRFMICRO_13
@@ -26,4 +26,4 @@ static int pinmux_bumon42_init(const struct device *port) {
     return 0;
 }
 
-SYS_INIT(pinmux_bumon42_init, APPLICATION, CONFIG_APPLICATION_INIT_PRIORITY);
+SYS_INIT(pinmux_Bumon42_init, APPLICATION, CONFIG_APPLICATION_INIT_PRIORITY);

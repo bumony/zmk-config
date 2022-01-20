@@ -1,5 +1,5 @@
 if SHIELD_BUMON42
 
 config ZMK_KEYBOARD_NAME
-    default "bumon42"
+    default "Bumon42"
 		endif
