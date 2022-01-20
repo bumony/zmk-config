@@ -1,0 +1,6 @@
+if SHIELD_LELE84
+
+config ZMK_KEYBOARD_NAME
+    default "Lele84Keyboard"
+endif
+

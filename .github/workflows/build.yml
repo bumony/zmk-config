@@ -46,13 +46,13 @@ jobs:
         id: west-zephyr-export
         with:
           args: 'zephyr-export'
-      - name: West Build (Bumon42)
+      - name: West Build (Lele84)
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-build-Bumon42
+        id: west-build-Lele84
         with:
-          args: 'build "-s zmk/app -b Bumon42 -- -DSHIELD=Bumon42 -DZMK_CONFIG=/github/workspace/config"'
-      - name: Archive (Bumon42)
+          args: 'build "-s zmk/app -b Lele84 -- -DSHIELD=Lele84 -DZMK_CONFIG=/github/workspace/config"'
+      - name: Archive (Lele84)
         uses: actions/upload-artifact@v2
         with:
-          name: Bumon42
+          name: Lele84
           path: build/zephyr/zmk.uf2

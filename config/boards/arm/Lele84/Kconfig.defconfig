@@ -3,10 +3,10 @@
 
 
 
-if BOARD_BUMON42
+if BOARD_LELE84
 
 config BOARD
-	default "Bumon42"
+	default "Lele84"
 
 if USB
 
@@ -32,7 +32,7 @@ config PINMUX
 
 config BOARD_NRFMICRO_CHARGER
 	default y
-
+	
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 

@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: MIT
 
 
-config BOARD_BUMON42
-	bool "BUMON42"
+config BOARD_LELE84
+	bool "Lele84"
 	depends on SOC_NRF52840_QIAA
