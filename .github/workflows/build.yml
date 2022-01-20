@@ -33,17 +33,17 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (KEYBOARD_TITLE)
-        run: west build -s zmk/app -b BOARD_NAME -- -DSHIELD=SHIELD_NAME -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: KEYBOARD_TITLE DTS File
+      - name: West Build (Bumon42)
+        run: west build -s zmk/app -b Bumon42 -- -DSHIELD=Bumon42 -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Bumon42 DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/BOARD_NAME.dts.pre.tmp
-      - name: KEYBOARD_TITLE Kconfig file
+        run: cat -n build/zephyr/Bumon42.dts.pre.tmp
+      - name: Bumon42 Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 SHIELD_NAME_BOARD_NAME.uf2
-      - name: Archive (KEYBOARD_TITLE)
+        run: cp build/zephyr/zmk.uf2 Bumon42.uf2
+      - name: Archive (Bumon42)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: SHIELD_NAME_BOARD_NAME.uf2
+          path: Bumon42.uf2
