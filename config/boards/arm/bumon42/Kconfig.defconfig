@@ -1,0 +1,39 @@
+# Copyright (c) 2020 Stefan Sundin (4pplet)
+# SPDX-License-Identifier: MIT
+
+
+
+if BOARD_BUMON42
+
+config BOARD
+	default "bumon42"
+
+if USB
+
+config USB_NRFX
+	default y
+
+config USB_DEVICE_STACK
+	default y
+
+endif # USB
+
+config BT_CTLR
+	default BT
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+config PINMUX
+	default y
+
+config BOARD_NRFMICRO_CHARGER
+	default y
+
+config ZMK_BATTERY_VOLTAGE_DIVIDER
+	default y
+
+endif
