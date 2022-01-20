@@ -1,2 +1,2 @@
-config BUMON42_BOARD
+config SHIELD_BUMON42
     def_bool $(shields_list_contains,bumon42)
