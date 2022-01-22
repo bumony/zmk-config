@@ -21,6 +21,8 @@
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &kp SLASH
             &kp LCTRL &kp LGUI &kp LALT &lt RSE SPACE &lt LWR SPACE &kp BSLH   &lt FN RGUI  &kp C_MUTE
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         lower_layer {
           bindings = <
@@ -29,6 +31,8 @@
             &kp LSHFT          &none  &none  &none  &none  &none  &none  &none  &none  &none              &none
             &none   &none   &none           &lt ADJ SPACE         &kp SPACE                 &none  &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         raise_layer {
           bindings = <
@@ -37,6 +41,8 @@
             &kp LSHFT &none  &none  &kp C_VOL_DN  &kp PG_DN  &kp END   &none  &none  &none  &none         &none
             &none   &none   &none           &kp SPACE       &lt ADJ SPACE                   &none  &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         adjust_layer {
           bindings = <
@@ -45,6 +51,8 @@
             &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         fn_layer {
           bindings = <
@@ -53,6 +61,7 @@
             &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
