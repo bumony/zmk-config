@@ -2,7 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-
     - name: megamind
       url-base: https://github.com/megamind4089
     - name: nicell
@@ -15,7 +14,6 @@ manifest:
       url-base: https://github.com/innovaker
     - name: okke-formsma
       url-base: https://github.com/okke-formsma
-
   projects:
     - name: zmk
       remote: zmkfirmware
