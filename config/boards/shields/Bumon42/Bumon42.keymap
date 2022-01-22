@@ -8,7 +8,7 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
-// #define FN  4
+#define FN  4
 
 / {
     keymap {
