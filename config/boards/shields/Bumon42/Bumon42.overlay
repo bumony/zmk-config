@@ -1,4 +1,4 @@
-#include "Bumon.dtsi"
+#include "Bumon42.dtsi"
 
 / {
 	chosen {
