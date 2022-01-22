@@ -26,7 +26,7 @@
           bindings = <
             &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9 &kp N0  &kp DEL
             &kp CAPS    &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT          &none
-            &none          &none  &none  &none  &none  &none  &none  &none  &none  &none                  &none
+            &kp LSHFT          &none  &none  &none  &none  &none  &none  &none  &none  &none              &none
             &none   &none   &none           &lt ADJ SPACE         &kp SPACE                 &none  &none  &none
 			       >;
         };
@@ -34,7 +34,7 @@
           bindings = <
             &none &none  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
             &none &none  &none &kp C_VOL_UP  &kp PG_UP  &kp HOME  &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
-            &none &none  &none  &kp C_VOL_DN  &kp PG_DN  &kp END   &none  &none  &none  &none             &none
+            &kp LSHFT &none  &none  &kp C_VOL_DN  &kp PG_DN  &kp END   &none  &none  &none  &none         &none
             &none   &none   &none           &kp SPACE       &lt ADJ SPACE                   &none  &none  &none
 			       >;
         };
