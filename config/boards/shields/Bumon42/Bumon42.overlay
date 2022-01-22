@@ -43,15 +43,19 @@
     };
     encoder: encoder {
         compatible = "alps,ec11";
-        label = "ENCODER";  
+        label = "ENCODER";
         a-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-        status = "okay";
+        status = "disabled";
     };
 
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
+    };
+
+    &encoder {
+      	status = "okay";
     };
 };
