@@ -1,3 +1,6 @@
+#include "sofle.dtsi"
+
+
 &right_encoder {
     status = "okay";
 };
