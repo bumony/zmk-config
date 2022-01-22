@@ -41,9 +41,10 @@
               , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
               ;
     };
-    encoder: encoder {
+
+    right_encoder: encoder_right {
         compatible = "alps,ec11";
-        label = "ENCODER";
+        label = "RIGHT_ENCODER";
         a-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
@@ -52,10 +53,7 @@
 
     sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&encoder>;
+        sensors = <&right_encoder>;
     };
 
-    &encoder {
-      	status = "okay";
-    };
 };
