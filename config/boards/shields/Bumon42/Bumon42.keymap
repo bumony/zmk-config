@@ -21,22 +21,28 @@
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &kp SLASH
             &kp LCTRL &kp LGUI &kp LALT &lt RSE SPACE &lt LWR SPACE &kp BSLH   &lt FN RGUI  &kp C_MUTE
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         lower_layer {
           bindings = <
             &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9 &kp N0  &kp DEL
             &kp CAPS    &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT          &none
-            &kp LSHFT          &none  &none  &none  &none  &none  &none  &none  &none  &none              &none
+            &kp LSHFT          &none  &none  &none  &none  &none  &none  &none  &none  &none          &kp RSHFT
             &none   &none   &none           &lt ADJ SPACE         &kp SPACE                 &none  &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         raise_layer {
           bindings = <
             &none &none  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
             &none &none  &none &kp C_VOL_UP  &kp PG_UP  &kp HOME  &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
-            &kp LSHFT &none  &none  &kp C_VOL_DN  &kp PG_DN  &kp END   &none  &none  &none  &none         &none
+            &kp LSHFT &none  &none  &kp C_VOL_DN  &kp PG_DN  &kp END   &none  &none  &none  &none     &kp RSHFT
             &none   &none   &none           &kp SPACE       &lt ADJ SPACE                   &none  &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         adjust_layer {
           bindings = <
@@ -45,6 +51,8 @@
             &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
         fn_layer {
           bindings = <
@@ -53,6 +61,7 @@
             &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none
 			       >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
