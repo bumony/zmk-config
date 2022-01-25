@@ -46,7 +46,7 @@
         };
         adjust_layer {
           bindings = <
-            &kp ESC  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none  &none
+            &kp ESC  &none  &none  &none  &none  &none   &none  &none  &none &kp MINUS &kp EQUAL &none
             &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none
