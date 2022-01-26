@@ -24,34 +24,34 @@
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
         };
-        lower_layer {
+        raise_layer {
           bindings = <
             &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9 &kp N0  &kp DEL
             &kp CAPS    &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT          &none
             &kp LSHFT          &none  &none  &none  &none  &none  &none  &none  &none  &none          &kp RSHFT
             &none   &none   &none         &kp SPACE           &lt ADJ SPACE                 &none  &none  &none
 			       >;
-          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+          sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 
         };
-        raise_layer {
+        lower_layer {
           bindings = <
             &none &none  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
             &none &none  &none &kp C_VOL_UP  &kp PG_UP  &kp HOME  &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
             &kp LSHFT &none  &none  &kp C_VOL_DN  &kp PG_DN  &kp END   &none  &none  &none  &none     &kp RSHFT
             &none   &none   &none       &lt ADJ SPACE           &kp SPACE                   &none  &none  &none
 			       >;
-          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
         };
         adjust_layer {
           bindings = <
             &kp ESC  &none  &none  &none  &none  &none   &none  &none  &none &kp MINUS &kp EQUAL &none
-            &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
+            &none  &none  &none  &none  &none  &none   &kp HOME  &none  &none  &kp END  &none
             &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none
 			       >;
-          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
         };
         fn_layer {
@@ -61,7 +61,7 @@
             &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &none  &none  &none   &none  &none  &none  &none  &none
             &none  &none  &none  &none  &none  &none   &none  &none
 			       >;
-          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
