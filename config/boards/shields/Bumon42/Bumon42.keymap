@@ -73,5 +73,6 @@
             &kp LCTRL &kp LGUI &kp LALT &lt RSE SPACE &lt LWR SPACE &kp BSLH   &lt FN RGUI  &kp C_MUTE
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
     };
 };
