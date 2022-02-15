@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-// #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/rgb.h>
 // changed lwr and rse
 #define DEF 0
 #define GAM 1
@@ -38,7 +38,7 @@
         raise_layer {
           bindings = <
             &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9 &kp N0  &kp DEL
-            &kp CAPS    &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT          &none
+            &kp CAPS    &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT          &kp INS
             &kp LSHFT          &none  &none  &none  &none  &none  &none  &none  &none  &kp DOT          &kp RSHFT
             &none   &none   &none         &kp SPACE           &lt ADJ SPACE                 &none  &none  &none
 			       >;
@@ -48,8 +48,8 @@
         lower_layer {
           bindings = <
             &none &none  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
-            &none &none  &none &kp C_VOL_UP  &kp PG_UP  &kp HOME  &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
-            &kp LSHFT &none  &none  &kp C_VOL_DN  &kp PG_DN  &kp END   &none  &none  &none  &none     &kp RSHFT
+            &none   &none    &none  &none   &none   &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
+            &kp LSHFT   &none    &none  &none   &none   &none    &none  &none  &none  &none     &kp RSHFT
             &none   &none   &none       &lt ADJ SPACE           &kp SPACE                   &none  &none  &none
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -58,9 +58,9 @@
         adjust_layer {
           bindings = <
             &kp ESC  &none  &none  &none  &none  &none   &none  &none  &none &kp MINUS &kp EQUAL &none
-            &none  &none  &none  &none  &none  &none   &kp HOME  &none  &none  &kp END  &none
-            &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
-            &none  &none  &none  &none  &none  &none   &none  &none
+            &none  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &none   &kp HOME  &none  &none  &kp END  &none
+            &none  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &none   &none  &none  &none  &none  &none
+            &none  &none  &none  &none  &none  &none   &none  &rgb_ug RGB_TOG
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
