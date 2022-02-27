@@ -15,7 +15,7 @@
 		zephyr,code-partition = &code_partition;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
-//		zmk,underglow = &led_strip;
+		zmk,underglow = &led_strip;
 	};
 
   leds {
@@ -39,7 +39,8 @@
 	ext-power {
 		compatible = "zmk,ext-power-generic";
 		label = "EXT_POWER";
-		control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+		//control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+        control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
 	};
 
 
@@ -68,14 +69,11 @@
 };
 
 &spi1 {
- 	// Underglow data: P0.31  before
   // Underglow data: P1.11  now, pin=32+11=43
   compatible = "nordic,nrf-spim";
   status = "okay";
   mosi-pin = <43>;
   // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-  //sck-pin = <28>; //old
-  //miso-pin = <30>; //old
   sck-pin = <20>;
   miso-pin = <13>;
 
