@@ -31,7 +31,7 @@
             &kp GRAVE  &kp N1  &kp N2 &kp N3 &kp N4  &kp N5   &kp N6      &kp N7     &kp N8      &kp N9      &kp N0        &kp BSPC
             &kp CAPS   &none   &none  &none  &none   &none    &kp MINUS      &kp EQUAL  &kp LBKT    &kp RBKT    &kp ENTER
             &kp LSHFT  &none   &none  &none  &none   &none    &kp SEMI    &kp SQT    &none       &none       &kp RSHFT
-            &none   &none   &none         &kp SPACE           &lt ADJ SPACE          &none       &none       &kp C_MUTE
+            &none   &none   &none         &kp SPACE           &lt ADJ SPACE          &none       &none       &kp C_PREV
 			       >;
           sensor-bindings = <&inc_dec_kp PG_DN PG_UP >;
         };
@@ -41,7 +41,7 @@
             &none       &kp EXCL  &kp AT     &kp HASH     &kp DLLR  &kp PRCNT  &kp CARET   &kp AMPS   &kp STAR    &kp LPAR    &kp RPAR   &kp DEL
             &none       &none     &kp UP     &none        &none     &none      &none       &none      &none       &none       &kp ENTER
             &kp LSHFT   &kp LEFT  &kp DOWN   &kp RIGHT    &none     &none      &none       &none      &none       &none       &kp RSHFT
-            &none       &none     &none     &lt ADJ SPACE           &kp SPACE                         &none       &none        &kp C_MUTE
+            &none       &none     &none     &lt ADJ SPACE           &kp SPACE                         &none       &none        &kp C_NEXT
 			       >;
           sensor-bindings = <&inc_dec_kp PG_DN PG_UP >;
         };
@@ -51,7 +51,7 @@
             &none            &none  &none  &none  &none  &none   &none  &none  &none &none &none  &kp BSPC
             &none            &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF   &none &none  &none  &none  &kp KP_ENTER
             &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR   &none  &none  &none  &none  &none
-            &none            &ext_power EXT_POWER_TOGGLE_CMD  &none  &none  &none  &none   &none  &kp C_MUTE
+            &none            &ext_power EXT_POWER_TOGGLE_CMD  &none  &none  &none  &none   &none  &kp C_PP
 			       >;
           sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP >;
         };
@@ -61,7 +61,7 @@
             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
             &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &none  &none  &none  &none  &reset
             &out OUT_TOG       &out OUT_USB  &out OUT_BLE  &none  &none      &none  &none   &none  &none  &none  &bootloader
-            &none  &none  &none  &none  &none  &none   &none  &kp C_MUTE
+            &none  &none  &none  &none  &none  &none   &none  &kp C_PP
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
