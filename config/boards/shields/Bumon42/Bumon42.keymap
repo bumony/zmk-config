@@ -22,7 +22,7 @@
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &mt RSHIFT SLASH
             &kp LCTRL &kp LGUI &kp LALT &lt RSE SPACE &lt LWR SPACE &kp BSLH   &lt FN RGUI  &kp C_MUTE
 			       >;
-          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -32,7 +32,7 @@
             &kp LSHFT   &kp LEFT    &kp DOWN   &kp RIGHT  &none   &none    &kp SEMI    &kp SQT    &none       &none       &kp RSHFT
             &none   &none   &none         &kp SPACE           &lt ADJ SPACE          &none       &none       &kp C_PREV
 			       >;
-          sensor-bindings = <&inc_dec_kp PG_DN PG_UP >;
+          sensor-bindings = <&inc_dec_kp  PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -42,7 +42,7 @@
             &kp LSHFT   &kp LEFT  &kp DOWN   &kp RIGHT    &none     &none      &none       &none      &none       &none       &kp RSHFT
             &none       &none     &none     &lt ADJ SPACE           &kp SPACE                         &none       &none        &kp C_NEXT
 			       >;
-          sensor-bindings = <&inc_dec_kp PG_DN PG_UP >;
+          sensor-bindings = <&inc_dec_kp  PG_UP PG_DN>;
         };
 
         adjust_layer {
@@ -52,7 +52,7 @@
             &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR   &none  &none  &none  &none  &none
             &none            &ext_power EXT_POWER_TOGGLE_CMD  &none  &none  &none  &none   &none  &kp C_PP
 			       >;
-          sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+          sensor-bindings = <&inc_dec_kp  PG_UP PG_DN>;
         };
 
         fn_layer {
@@ -62,7 +62,7 @@
             &out OUT_TOG       &out OUT_USB  &out OUT_BLE  &none  &none      &none  &none   &none  &none  &none  &bootloader
             &none  &none  &none  &none  &none  &none   &none  &kp C_PP
 			       >;
-          sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
+          sensor-bindings = <&inc_dec_kp  C_BRI_UP C_BRI_DN>;
         };
     };
 };
