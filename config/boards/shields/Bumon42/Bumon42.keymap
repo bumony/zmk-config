@@ -28,8 +28,8 @@
         raise_layer {
           bindings = <
             &kp GRAVE  &kp N1  &kp N2 &kp N3 &kp N4  &kp N5   &kp N6      &kp N7     &kp N8      &kp N9      &kp N0        &kp BSPC
-            &kp CAPS   &none   &none  &none  &none   &none    &kp MINUS      &kp EQUAL  &kp LBKT    &kp RBKT    &kp ENTER
-            &kp LSHFT  &none   &none  &none  &none   &none    &kp SEMI    &kp SQT    &none       &none       &kp RSHFT
+            &kp CAPS   &none   &kp UP  &none  &none   &none    &kp MINUS      &kp EQUAL  &kp LBKT    &kp RBKT    &kp ENTER
+            &kp LSHFT   &kp LEFT    &kp DOWN   &kp RIGHT  &none   &none    &kp SEMI    &kp SQT    &none       &none       &kp RSHFT
             &none   &none   &none         &kp SPACE           &lt ADJ SPACE          &none       &none       &kp C_PREV
 			       >;
           sensor-bindings = <&inc_dec_kp PG_DN PG_UP >;
