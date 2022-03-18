@@ -40,7 +40,7 @@
 		compatible = "zmk,ext-power-generic";
 		label = "EXT_POWER";
 		//control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
-        control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+        	control-gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
 	};
 
 
