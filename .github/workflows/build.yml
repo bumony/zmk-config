@@ -5,6 +5,8 @@ name: Build
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: zmkfirmware/zmk-build-arm:dtable
     name: Build
     steps:
       # To use this repository's private action,
