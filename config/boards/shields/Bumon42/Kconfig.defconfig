@@ -4,6 +4,12 @@ config ZMK_KEYBOARD_NAME
     default "QYkeyboard"
 endif
 
+
+CONFIG_BUILD_OUTPUT_UF2=y
+CONFIG_ZMK_RGB_UNDERGLOW=y
+# Use the STRIP config specific to the LEDs you're using
+CONFIG_WS2812_STRIP=y
+
 if ZMK_DISPLAY
 
 config I2C
