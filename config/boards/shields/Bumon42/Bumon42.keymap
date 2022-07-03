@@ -29,10 +29,10 @@
 
         game_layer {
           bindings = <
-            &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O   &kp P  &kp BSPC
+            &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O   &kp P  &kp DEL
             &kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L         &kp ENTER
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &mt RSHIFT SLASH
-            &kp LCTRL &lt FN RGUI &kp LALT  &kp SPACE &lt RSE SPACE &lt LWR SPACE  &lt FN RGUI &kp C_MUTE
+            &kp LCTRL &lt FN RGUI &kp LALT  &kp SPACE &lt RSE SPACE &lt LWR SPACE  &lt FN RGUI &kp RCTRL
              >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -41,7 +41,7 @@
             &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9 &kp N0  &kp DEL
             &kp CAPS    &none  &none  &none  &none  &kp KP_MINUS  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT          &kp INS
             &kp LSHFT          &none  &none  &none  &none &kp KP_PLUS  &none  &none  &none  &kp DOT          &kp RSHFT
-            &none   &none   &none         &kp SPACE           &lt ADJ SPACE                 &none  &none  &none
+            &none   &none   &none         &kp SPACE           &lt ADJ SPACE                 &kp C_PREV  &kp C_PP  &kp C_NEXT
 			       >;
           sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 
@@ -51,7 +51,7 @@
             &none &none  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
             &none   &none    &none  &none   &none   &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
             &kp LSHFT   &none    &none  &none   &none   &none    &none  &none  &none  &none     &kp RSHFT
-            &none   &none   &none       &lt ADJ SPACE           &kp SPACE                   &none  &none  &none
+            &none   &none   &none       &lt ADJ SPACE           &kp SPACE                   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
