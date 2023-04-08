@@ -12,7 +12,7 @@
 #define ADJ 4
 #define FN  5
 
-// 澈言的bumon42 20230408
+
 / {
     keymap {
         compatible = "zmk,keymap";
