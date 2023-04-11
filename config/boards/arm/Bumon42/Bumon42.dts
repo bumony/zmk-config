@@ -47,6 +47,23 @@
 
 };
 
+&pinctrl {
+       i2c0_default: i2c0_default {
+               group1 {
+                       psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
+                               <NRF_PSEL(TWIM_SCL, 0, 17)>;
+               };
+       };
+
+       i2c0_sleep: i2c0_sleep {
+               group1 {
+                       psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
+                               <NRF_PSEL(TWIM_SCL, 0, 17)>;
+                       low-power-enable;
+               };
+       };
+};
+
 &gpio0 {
 	status = "okay";
 };
@@ -57,8 +74,9 @@
 
 &i2c0 {
 	compatible = "nordic,nrf-twi";
-	sda-pin = <15>;
-	scl-pin = <17>;
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
 };
 
 &adc {
