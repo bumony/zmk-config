@@ -11,38 +11,38 @@ CONFIG_ZMK_RGB_UNDERGLOW=y
 # Use the STRIP config specific to the LEDs you're using
 CONFIG_WS2812_STRIP=y
 
-if ZMK_DISPLAY
+# if ZMK_DISPLAY
 
-config I2C
-	default y
+#config I2C
+#	default y
 
-config SSD1306
-	default y
+#config SSD1306
+#	default y
 
-config SSD1306_REVERSE_MODE
-	default y
+#config SSD1306_REVERSE_MODE
+#	default y
 
-endif # ZMK_DISPLAY
+#endif # ZMK_DISPLAY
 
-if LVGL
+#if LVGL
 
-config LVGL_HOR_RES_MAX
-	default 128
+#config LVGL_HOR_RES_MAX
+#	default 128
 
-config LVGL_VER_RES_MAX
-	default 32
+#config LVGL_VER_RES_MAX
+#	default 32
 
-config LV_Z_VDB_SIZE
-	default 64
+#config LV_Z_VDB_SIZE
+#	default 64
 
-config LV_DPI_DEF
-	default 148
+#config LV_DPI_DEF
+#	default 148
 
-config LV_Z_BITS_PER_PIXEL
-	default 1
+#config LV_Z_BITS_PER_PIXEL
+#	default 1
 
-choice LV_COLOR_DEPTH
-	default LV_COLOR_DEPTH_1
-endchoice
+#choice LV_COLOR_DEPTH
+#	default LV_COLOR_DEPTH_1
+#endchoice
 
-endif # LVGL
+#endif # LVGL
