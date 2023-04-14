@@ -64,7 +64,7 @@
        };
 	   spi2_default: spi1_default {
                group2 {
-                       psels = <NRF_PSEL(SPIM_MOSI, 0, 43)>;
+                       psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
 					   		   //<NRF_PSEL(SPIM_MISO, 0, 13)>,
                                //<NRF_PSEL(SPIM_SCK, 0, 20)>;
                };
@@ -72,7 +72,7 @@
 
        spi2_sleep: spi1_sleep {
                group2 {
-                       psels = <NRF_PSEL(SPIM_MOSI, 0, 43)>;
+                       psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
 					   		   //<NRF_PSEL(SPIM_MISO, 0, 13)>,
                                //<NRF_PSEL(SPIM_SCK, 0, 20)>;
                        low-power-enable;
