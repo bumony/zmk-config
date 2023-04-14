@@ -42,7 +42,6 @@
 		compatible = "zmk,ext-power-generic";
 		label = "EXT_POWER";
 		control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
-        // control-gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
 	};
 
 
@@ -58,12 +57,7 @@
 	status = "okay";
 };
 
-// &i2c0 {
-// 	compatible = "nordic,nrf-twi";
-// 	pinctrl-0 = <&i2c0_default>;
-// 	pinctrl-1 = <&i2c0_sleep>;
-// 	pinctrl-names = "default", "sleep";
-// };
+
 
 &adc {
 	status = "okay";
