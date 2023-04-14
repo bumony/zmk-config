@@ -48,39 +48,7 @@
 
 };
 
-&pinctrl {
-    //    i2c0_default: i2c0_default {
-    //            group1 {
-    //                    psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
-    //                            <NRF_PSEL(TWIM_SCL, 0, 17)>;
-    //            };
-    //    };
 
-    //    i2c0_sleep: i2c0_sleep {
-    //            group1 {
-    //                    psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
-    //                            <NRF_PSEL(TWIM_SCL, 0, 17)>;
-    //                    low-power-enable;
-    //            };
-    //    };
-	   spi3_default: spi3_default {
-               group1 {
-                       psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
-					   		   //<NRF_PSEL(SPIM_MISO, 0, 13)>,
-                               //<NRF_PSEL(SPIM_SCK, 0, 20)>;
-               };
-       };
-
-       spi3_sleep: spi3_sleep {
-               group1 {
-                       psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
-					   		   //<NRF_PSEL(SPIM_MISO, 0, 13)>,
-                               //<NRF_PSEL(SPIM_SCK, 0, 20)>;
-                       low-power-enable;
-               };
-       };
-
-};
 
 &gpio0 {
 	status = "okay";
@@ -105,14 +73,22 @@
 	status = "okay";
 };
 
+&pinctrl {
+    spi3_default: spi3_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
+        };
+    };
+
+    spi3_sleep: spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
+            low-power-enable;
+        };
+    };
+};
 
 &spi3 {
-	  // Underglow data: P1.11  now, pin=32+11=43
-	  
-  // mosi-pin = <43>;
-  // // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-  // sck-pin = <20>;
-  // miso-pin = <13>;
   compatible = "nordic,nrf-spim";
   status = "okay";
 
@@ -137,6 +113,8 @@
                           LED_COLOR_ID_BLUE>;
   };
 };
+
+
 
 
 &flash0 {
