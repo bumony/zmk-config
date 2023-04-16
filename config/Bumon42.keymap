@@ -20,10 +20,10 @@
 
         default_layer {
             bindings = <
-  &kp ESC     &kp Q     &kp W          &kp E          &kp R     &kp T        &kp Y  &kp U      &kp I      &kp O             &kp P
-  &kp TAB     &kp A     &kp S          &kp D          &kp F     &kp G        &kp H  &kp J      &kp K      &kp L         &kp ENTER
-&kp LSHFT     &kp Z     &kp X          &kp C          &kp V     &kp B        &kp N  &kp M  &kp COMMA    &kp DOT  &mt RSHIFT SLASH
-           &kp LGUI  &kp LALT  &lt RSE SPACE  &lt LWR SPACE  &kp BSLH  &lt FN RGUI  &kp X   &kp BSPC  &kp LCTRL
+  &kp ESC     &kp Q     &kp W          &kp E          &kp R     &kp T        &kp Y  &kp U   &kp BSPC    &kp O             &kp P
+  &kp TAB     &kp A     &kp S          &kp D          &kp F     &kp G        &kp H  &kp J      &kp K    &kp L         &kp ENTER
+&kp LSHFT     &kp Z     &kp X          &kp C          &kp V     &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&kp LCTRL  &kp LGUI  &kp LALT  &lt RSE SPACE  &lt LWR SPACE  &kp BSLH  &lt FN RGUI  &kp Z
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -31,10 +31,10 @@
 
         game_layer {
             bindings = <
-  &kp ESC        &kp Q     &kp W      &kp E          &kp R          &kp T        &kp Y      &kp U      &kp I      &kp O             &kp P
-  &kp TAB        &kp A     &kp S      &kp D          &kp F          &kp G        &kp H      &kp J      &kp K      &kp L         &kp ENTER
-&kp LSHFT        &kp Z     &kp X      &kp C          &kp V          &kp B        &kp N      &kp M  &kp COMMA    &kp DOT  &mt RSHIFT SLASH
-           &lt FN RGUI  &kp LALT  &kp SPACE  &lt RSE SPACE  &lt LWR SPACE  &lt FN RGUI  &kp RCTRL    &kp DEL  &kp LCTRL
+  &kp ESC        &kp Q     &kp W      &kp E          &kp R          &kp T        &kp Y      &kp U    &kp DEL    &kp O             &kp P
+  &kp TAB        &kp A     &kp S      &kp D          &kp F          &kp G        &kp H      &kp J      &kp K    &kp L         &kp ENTER
+&kp LSHFT        &kp Z     &kp X      &kp C          &kp V          &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&kp LCTRL  &lt FN RGUI  &kp LALT  &kp SPACE  &lt RSE SPACE  &lt LWR SPACE  &lt FN RGUI  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -42,10 +42,10 @@
 
         raise_layer {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2     &kp N3         &kp N4        &kp N5    &kp N6      &kp N7   &kp N8     &kp N9     &kp N0
+&kp GRAVE  &kp N1  &kp N2     &kp N3         &kp N4        &kp N5    &kp N6      &kp N7  &kp DEL     &kp N9     &kp N0
  &kp CAPS   &none   &none      &none          &none  &kp KP_MINUS  &kp LEFT    &kp DOWN   &kp UP  &kp RIGHT    &kp INS
 &kp LSHFT   &none   &none      &none          &none   &kp KP_PLUS     &none       &none    &none    &kp DOT  &kp RSHFT
-            &none   &none  &kp SPACE  &lt ADJ SPACE    &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp DEL      &none
+    &none   &none   &none  &kp SPACE  &lt ADJ SPACE    &kp C_PREV  &kp C_PP  &kp C_NEXT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -53,10 +53,10 @@
 
         lower_layer {
             bindings = <
-    &none  &none  &none          &none      &none         &none       &none         &none     &none  &kp LBKT   &kp RBKT
+    &none  &none  &none          &none      &none         &none       &none         &none  &kp BSLH  &kp LBKT   &kp RBKT
     &none  &none  &none          &none      &none         &none   &kp MINUS     &kp EQUAL  &kp SEMI   &kp SQT      &none
 &kp LSHFT  &none  &none          &none      &none         &none       &none         &none     &none     &none  &kp RSHFT
-           &none  &none  &lt ADJ SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp BSLH     &none
+    &none  &none  &none  &lt ADJ SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -67,7 +67,7 @@
 &ext_power EXT_POWER_TOGGLE_CMD            &none            &none            &none            &none            &none     &none            &none  &none  &kp MINUS  &kp EQUAL
                           &none  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &kp HOME            &none  &none    &kp END      &none
                           &none  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR     &none            &none  &none      &none      &none
-                                           &none            &none            &none            &none            &none     &none  &rgb_ug RGB_TOG  &none      &none
+                          &none            &none            &none            &none            &none            &none     &none  &rgb_ug RGB_TOG
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -75,10 +75,10 @@
 
         fn_layer {
             bindings = <
-    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &kp F7  &kp F8   &kp F9  &kp F10      &kp F11
+    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F12  &kp F10      &kp F11
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &none   &none    &none    &none   &sys_reset
      &none  &out OUT_USB  &out OUT_BLE  &out OUT_TOG         &none         &none   &none   &none    &none    &none  &bootloader
-                 &to GAM         &none         &none         &none         &none   &none   &none  &kp F12  &to DEF
+   &to DEF       &to GAM         &none         &none         &none         &none   &none   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
