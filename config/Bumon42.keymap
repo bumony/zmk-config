@@ -15,6 +15,15 @@
 #define FN  5
 
 / {
+    macros {
+        mac_lock: mac_lock {
+            compatible = "zmk,behavior-macro";
+            label = "MAC_LOCK";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(Q))>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,13 +51,13 @@
 
         lower_layer {
             bindings = <
-    &none  &none  &none        &none      &none         &none       &none         &none     &none  &kp LBKT   &kp RBKT  &kp BSLH
-    &none  &none  &none        &none      &none         &none   &kp MINUS     &kp EQUAL  &kp SEMI   &kp SQT      &none
-&kp LSHFT  &none  &none        &none      &none         &none       &none         &none     &none     &none  &kp RSHFT
-    &none  &none  &none  &lt 3 SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP
+&kp GRAVE     &none    &kp PAGE_UP      &none      &none         &none         &none  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
+    &none  &kp HOME  &kp PAGE_DOWN    &kp END      &none         &none         &none      &none   &kp SEMI   &kp SQT      &none
+&kp LSHFT     &none          &none      &none      &none         &none         &none      &none      &none     &none  &kp RSHFT
+    &none     &none          &none  &kp SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_VOL_UP  &mac_lock
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         adjust_layer {
