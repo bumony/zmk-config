@@ -43,7 +43,7 @@
 &kp GRAVE  &kp N1  &kp N2       &kp N3  &kp N4  &kp N5         &none    &kp KP_MINUS         &kp UP  &kp KP_PLUS     &trans  &kp DELETE
    &trans  &kp N6  &kp N7       &kp N8  &kp N9  &kp N0         &none  &kp LEFT_ARROW       &kp DOWN    &kp RIGHT     &trans
 &kp LSHFT   &none   &none        &none   &none   &none  &kp ASTERISK    &kp KP_EQUAL  &kp KP_DIVIDE      &kp DOT  &kp RSHFT
-&kp LCTRL   &none   &none  &lt 3 SPACE   &none   &none         &none           &none
+&kp LCTRL  &trans  &trans  &lt 3 SPACE   &none   &none         &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -54,7 +54,7 @@
 &kp GRAVE     &none    &kp PAGE_UP      &none      &none         &none         &none  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
     &none  &kp HOME  &kp PAGE_DOWN    &kp END      &none         &none         &none      &none   &kp SEMI   &kp SQT      &none
 &kp LSHFT     &none          &none      &none      &none         &none         &none      &none      &none     &none  &kp RSHFT
-    &none     &none          &none  &kp SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_VOL_UP  &mac_lock
+   &trans    &trans         &trans  &kp SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_VOL_UP  &mac_lock
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
