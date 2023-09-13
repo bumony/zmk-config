@@ -51,9 +51,9 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE  &none     &kp PAGE_UP    &none      &none      &none         &none         &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT        &kp BSLH
-&none      &kp HOME  &kp PAGE_DOWN  &kp END    &none      &none         &none         &none      &kp SEMI   &kp SQT   &kp LEFT_SHIFT
-&kp LSHFT  &none     &none          &none      &none      &none         &none         &none      &none      &none     &none
+&kp GRAVE  &none     &kp PAGE_UP    &none      &none      &none         &none         &kp MINUS  &kp EQUAL      &kp LBKT     &kp RBKT        &kp BSLH
+&none      &kp HOME  &kp PAGE_DOWN  &kp END    &none      &none         &none         &none      &kp SEMI       &kp SQT      &kp LEFT_SHIFT
+&kp LSHFT  &none     &none          &none      &none      &none         &none         &none      &kp LS(COMMA)  &kp LS(DOT)  &none
 &trans     &trans    &trans         &kp SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_VOL_UP  &mac_lock
             >;
 
