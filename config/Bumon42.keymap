@@ -53,9 +53,9 @@
 
         lower_layer {
             bindings = <
-&none      &none  &none  &none          &none      &none         &none         &none         &none         &kp LBKT      &kp RBKT   &kp BSLH
-&none      &none  &none  &none          &none      &none         &kp MINUS     &kp EQUAL     &kp SEMI      &kp SQT       &none
-&kp LSHFT  &none  &none  &none          &none      &none         &kp KP_MINUS  &kp ASTRK     &kp KP_SLASH  &kp KP_EQUAL  &kp RSHFT
+&none      &none  &none  &none          &none      &none         &none         &none         &none         &kp LBKT   &kp RBKT   &kp BSLH
+&none      &none  &none  &none          &none      &none         &kp MINUS     &kp EQUAL     &kp SEMI      &kp SQT    &none
+&kp LSHFT  &none  &none  &none          &none      &none         &kp KP_MINUS  &kp ASTRK     &kp KP_SLASH  &kp EQUAL  &kp RSHFT
 &none      &none  &none  &lt ADJ SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP
             >;
 
