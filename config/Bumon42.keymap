@@ -25,6 +25,8 @@
 &kp LSHFT  &kp Z     &kp X     &kp C          &kp V          &kp B     &kp N        &kp M      &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp LCTRL  &kp LGUI  &kp LALT  &lt RSE SPACE  &lt LWR SPACE  &kp BSLH  &lt FN RGUI  &kp RCTRL
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         game_layer {
