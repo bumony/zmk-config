@@ -27,3 +27,5 @@ readable layout and keymap definitions for use with @nickcoutsos' [keymap-editor
 For the keymap-editor to do its job, it will need write access to the github repo it's pointing at.
 
 If you want to use the keymap-editor for your Bumon42 keyboard and you are not this repository's author, please fork this repo first and substitute any reference to `DAydDaY` in the README with you own username.
+
+..
