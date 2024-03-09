@@ -1,8 +1,6 @@
 # Copyright (c) 2020 Stefan Sundin (4pplet)
 # SPDX-License-Identifier: MIT
 
-
-
 if BOARD_BUMON42
 
 config BOARD
@@ -16,7 +14,7 @@ config USB_NRFX
 config USB_DEVICE_STACK
 	default y
 
-endif # USB
+endif  USB
 
 config BT_CTLR
 	default BT
