@@ -27,8 +27,8 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-config PINMUX
-	default y
+#config PINMUX
+#	default y
 
 config BOARD_NRFMICRO_CHARGER
 	default y
