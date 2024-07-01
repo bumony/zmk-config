@@ -40,10 +40,10 @@
 
         raise_layer {
             bindings = <
-&kp NON_US_BACKSLASH  &kp N1     &kp N2  &kp N3       &kp N4       &kp N5          &none         &none           &kp UP        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
-&trans                &kp N6     &kp N7  &kp N8       &kp N9       &kp N0          &none         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT             &trans
-&kp LSHFT             &kp UNDER  &none   &none        &kp KP_PLUS  &kp MINUS       &kp ASTERISK  &kp KP_DIVIDE   &kp KP_EQUAL  &kp DOT               &kp RSHFT
-&kp LCTRL             &trans     &trans  &lt 3 SPACE  &none        &kp LEFT_SHIFT  &none         &none
+&kp NON_US_BACKSLASH  &kp N1     &kp N2  &kp N3       &kp N4       &kp N5           &none         &none           &kp UP        &kp RS(N9)  &kp RS(N0)  &kp DELETE
+&trans                &kp N6     &kp N7  &kp N8       &kp N9       &kp N0           &none         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT   &trans
+&kp LSHFT             &kp UNDER  &none   &none        &kp KP_PLUS  &kp MINUS        &kp ASTERISK  &kp KP_DIVIDE   &kp KP_EQUAL  &kp DOT     &kp RSHFT
+&kp LCTRL             &trans     &trans  &lt 3 SPACE  &none        &kp RIGHT_SHIFT  &none         &none
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
