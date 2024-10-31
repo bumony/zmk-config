@@ -1,58 +1,58 @@
-on: [push, pull_request]
+上一篇：[推，拉请求]
 
-name: Build
+姓名： 建造者
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: Build
-    steps:
-      # To use this repository's private action,
-      # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Cache west modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-zephyr-modules
-        with:
-          path: |
-            modules/
-            tools/
-            zephyr/
-            bootloader/
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('config/west.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      - name: West Init
-        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-init
-        with:
-          args: 'init "-l config"'
-      - name: West Update
-        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-update
-        with:
-          args: 'update'
-      - name: West Config Zephyr Base
-        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-config
-        with:
-          args: 'config "--global zephyr.base-prefer configfile"'
-      - name: West Zephyr Export
-        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-zephyr-export
-        with:
-          args: 'zephyr-export'
-      - name: West Build (Bumon42)
-        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-build-Bumon42
-        with:
-          args: 'build "-s zmk/app -b Bumon42 -- -DSHIELD=Bumon42 -DZMK_CONFIG=/github/workspace/config"'
-      - name: Archive (Bumon42)
-        uses: actions/upload-artifact@v2
-        with:
-          name: Bumon42
-          path: build/zephyr/zmk.uf2
+职位：
+  建造者：
+    运行：ubuntu-latest
+    姓名： 建造者
+    步骤：
+      #要使用这个钱包的操作，
+      #你必须检查仓库
+      -姓名：结账-姓名：结账-姓名：结账-姓名：结账
+        用途：actions/checkout@v2
+      -名称：Cache西模块
+        用途：actions/cache@v2
+        环境：
+          服务器名称：cache-zephyr-modules
+        和：
+          路径：|
+            /模块
+            工具/
+            和风/
+            引导加载程序/
+键：$ {  { runner.os }  } -build-$ {  { env.cache-name }  } -$ {  { hashFiles( 'config/west.yml' ) }  }  {  { runner.os }  } -build-$ {  { env .cache-name }  } -$ {  { hashFiles( 'config/west.yml' ) }  }
+          恢复键：|
+            $ { { runner.os } } -build-$ { { env.cache-name } } -
+            $ {  { runner.os }  } -构建-
+            $ {  { runner.os }  } -
+      -名称 :         - 名称：西云南
+        使用：'docker://zmkfirmware/zephyr-west-action-arm:latest'
+ id :          id :         西初始化
+        和：
+          args  : '初始化“-l config”'
+      - name  :         - 名称：西部更新
+        使用：'docker://zmkfirmware/zephyr-west-action-arm:latest'
+ id :          id :         西更新
+        和：
+          参数：'更新'
+      - name  :         - 名称：West Config Zephyr 基地
+        使用：'docker://zmkfirmware/zephyr-west-action-arm:latest'
+ id :          id :         西配置
+        和：
+          参数 : 'config "--global zephyr.base-prefer configfile"'
+      - name :        - 名称：West Zephyr 出口
+        使用：'docker://zmkfirmware/zephyr-west-action-arm:latest'
+        id : id ：         西和风出口
+        和：
+          args : 'zephyr 导出'
+      -名称:        - 名称：West Build (Bumon42)
+        使用：'docker://zmkfirmware/zephyr-west-action-arm:latest'
+ id :                   id ： west-build-Bumon42
+        和：
+          args  : 'build "-s zmk/app -b Bumon42 -- -DSHIELD=Bumon42 -DZMK_CONFIG=/github/workspace/config"'
+      -名称:         -名称：档案（Bumon42）
+        使用： 使用：actions/upload-artifact@v2
+        和：
+          姓名：           姓名：布蒙42
+          小路：           路径：build/zephyr/zmk.uf2
