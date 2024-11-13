@@ -1,5 +1,5 @@
 #include <physical_layouts.dtsi>
-#include <dt-bindings/zmk/matrix_transform.h>
+// #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     physical_layout0: physical_layout_0 {
@@ -7,7 +7,7 @@
         display-name = "LAYOUT";
 
         kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
