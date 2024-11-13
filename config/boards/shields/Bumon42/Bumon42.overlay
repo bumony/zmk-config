@@ -1,12 +1,12 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "Bumon42_layouts.dtsi"
+#include <Bumon42_layouts.dtsi>
 // #include "Bumon42.dtsi"
 // #include "Bumon42_layouts.dtsi"
 / {
 	chosen {
 		zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
-        zmk,matrix_transform = &default_transform;
+        // zmk,matrix_transform = &default_transform;
 	};
 default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
