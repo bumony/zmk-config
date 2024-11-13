@@ -12,7 +12,6 @@
 #define ADJ 4
 #define FN  5
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
