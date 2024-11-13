@@ -1,5 +1,5 @@
 #include "Bumon42.dtsi"
-
+#include "Bumon42_layouts.dtsi"
 / {
 	chosen {
 		zmk,kscan = &kscan0;
