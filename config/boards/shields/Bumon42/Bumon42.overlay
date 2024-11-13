@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "Bumon42_layouts.dtsi"
-#include "Bumon42.dtsi"
+// #include "Bumon42.dtsi"
 // #include "Bumon42_layouts.dtsi"
 / {
 	chosen {
