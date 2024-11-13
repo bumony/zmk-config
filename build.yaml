@@ -15,6 +15,7 @@
 include:
   - board: Bumon42
     shield: Bumon42
+    snippet: studio-rpc-usb-uart
 #on: [push, pull_request, workflow_dispatch]
 
 #jobs:
