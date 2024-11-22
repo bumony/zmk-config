@@ -22,6 +22,18 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        erHome {
+            bindings = <&kp HOME>;
+            key-positions = <3 4>;
+            timeout-ms = <35>;
+        };
+
+        uiEnd {
+            bindings = <&kp END>;
+            key-positions = <7 8>;
+            timeout-ms = <35>;
+        };
     };
 
     keymap {
@@ -29,10 +41,10 @@
 
         default_layer {
             bindings = <
-&kp TAB           &kp Q     &kp W     &kp E          &kp R      &kp T     &kp Y        &kp U      &kp I      &kp O    &kp P             &kp BSPC
-&kp LEFT_CONTROL  &kp A     &kp S     &kp D          &kp F      &kp G     &kp H        &kp J      &kp K      &kp L    &kp ENTER
-&kp LSHFT         &kp Z     &kp X     &kp C          &kp V      &kp B     &kp N        &kp M      &kp COMMA  &kp DOT  &mt RSHIFT SLASH
-&mo 3             &kp LGUI  &kp LALT  &lt RSE SPACE  &kp SPACE  &kp BSLH  &lt FN RGUI  &kp RCTRL
+&kp TAB           &kp Q     &kp W     &kp E        &kp R      &kp T     &kp Y       &kp U      &kp I      &kp O    &kp P             &kp BSPC
+&kp LEFT_CONTROL  &kp A     &kp S     &kp D        &kp F      &kp G     &kp H       &kp J      &kp K      &kp L    &kp ENTER
+&kp LSHFT         &kp Z     &kp X     &kp C        &kp V      &kp B     &kp N       &kp M      &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&mo 3             &kp LGUI  &kp LALT  &lt 2 SPACE  &kp SPACE  &kp BSLH  &lt 5 RGUI  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -40,10 +52,10 @@
 
         game_layer {
             bindings = <
-&kp ESC    &kp Q        &kp W     &kp E      &kp R          &kp T          &kp Y        &kp U      &kp I      &kp O    &kp P             &kp DEL
-&kp TAB    &kp A        &kp S     &kp D      &kp F          &kp G          &kp H        &kp J      &kp K      &kp L    &kp ENTER
-&kp LSHFT  &kp Z        &kp X     &kp C      &kp V          &kp B          &kp N        &kp M      &kp COMMA  &kp DOT  &mt RSHIFT SLASH
-&kp LCTRL  &lt FN RGUI  &kp LALT  &kp SPACE  &lt RSE SPACE  &lt LWR SPACE  &lt FN RGUI  &kp RCTRL
+&kp ESC    &kp Q       &kp W     &kp E      &kp R        &kp T        &kp Y       &kp U      &kp I      &kp O    &kp P             &kp DEL
+&kp TAB    &kp A       &kp S     &kp D      &kp F        &kp G        &kp H       &kp J      &kp K      &kp L    &kp ENTER
+&kp LSHFT  &kp Z       &kp X     &kp C      &kp V        &kp B        &kp N       &kp M      &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&kp LCTRL  &lt 5 RGUI  &kp LALT  &kp SPACE  &lt 2 SPACE  &lt 3 SPACE  &lt 5 RGUI  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -52,7 +64,7 @@
         raise_layer {
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4         &kp N5        &kp N6    &kp N7      &kp N8  &kp N9  &kp N0     &kp DEL
-&kp CAPS   &none   &none   &none      &none          &kp KP_MINUS  &kp LEFT  &kp N4      &kp N5  &kp N6  &kp INS
+&kp CAPS   &none   &none   &none      &none          &kp KP_MINUS  &none     &kp N4      &kp N5  &kp N6  &kp INS
 &kp LSHFT  &none   &none   &none      &none          &kp KP_PLUS   &none     &kp N1      &kp N2  &kp N3  &kp RSHFT
 &none      &none   &none   &kp SPACE  &kp BACKSPACE  &kp C_PREV    &kp C_PP  &kp C_NEXT
             >;
@@ -62,10 +74,10 @@
 
         lower_layer {
             bindings = <
-&none      &none  &none  &none          &none      &none         &none       &none         &none     &kp LBKT  &kp RBKT   &kp BSLH
-&none      &none  &none  &none          &none      &none         &kp MINUS   &kp EQUAL     &kp SEMI  &kp SQT   &none
-&kp LSHFT  &none  &none  &none          &none      &none         &none       &none         &none     &none     &kp RSHFT
-&none      &none  &none  &lt ADJ SPACE  &kp SPACE  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP
+&none      &none  &none  &none        &none      &none           &none           &none           &none     &kp LBKT      &kp RBKT   &kp BSLH
+&none      &none  &none  &none        &none      &none           &kp MINUS       &kp EQUAL       &kp SEMI  &kp SQT       &none
+&kp LSHFT  &none  &none  &none        &none      &none           &none           &none           &none     &kp UP_ARROW  &kp RSHFT
+&none      &none  &none  &lt 4 SPACE  &kp SPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -87,14 +99,19 @@
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7  &kp F8          &kp F9  &kp F10         &kp F11      &kp F12
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none   &none           &none   &none           &sys_reset
 &none       &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &none         &none         &none   &none           &none   &studio_unlock  &bootloader
-&to DEF     &to GAM       &none         &none         &none         &none         &none   &studio_unlock
+&to 0       &to 1         &none         &none         &none         &none         &none   &studio_unlock
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        extra1 { status = "reserved"; };
-
-        extra2 { status = "reserved"; };
+        L-66 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
