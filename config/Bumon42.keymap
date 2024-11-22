@@ -14,6 +14,8 @@
 #define ADJ 4
 #define FN  5
 
+&lt { tapping-term-ms = <170>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -35,7 +37,6 @@
             timeout-ms = <35>;
         };
     };
-
 
     keymap {
         compatible = "zmk,keymap";
